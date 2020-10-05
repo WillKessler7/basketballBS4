@@ -8,8 +8,8 @@
     <!-- Old CSS style sheet -->
     <!-- link rel="stylesheet" href="basketballStyleSheet.css" -->
 
-    <!-- MaxCDN link for the latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -46,13 +46,30 @@
             <h1>Basketball Guide</h1>
         </div>
 
-        <div id="navbar">
-            <a style="background-color: #b01010;" href="#Top">Basketball Guide</a>
-            <a style="background-color: #1039b3;" href="#Description">Description</a>
-            <a style="background-color: #92b310;" href="#Rules">Rules</a>
-            <a style="background-color: #b37d10;" href="#NBA">NBA</a>
-            <a style="background-color: #3ba390;" href="#Statsheet">All time statistics sheet</a>
-        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+
+          <a class="navbar-brand" href="#Top">Basketball Guide</a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Description">Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Rules">Rules</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                NBA Ranks
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#StadiumList">Largest Stadiums</a>
+                <a class="dropdown-item" href="#Statsheet">All time Statistic Ranks</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
 
         <a name="Description"></a>
 
@@ -114,6 +131,8 @@
         analysts, statistics in the NBA are well documented, so when arguing over who is the <abbr title="Greatest of all time">GOAT,</abbr>
         which is a very popular topic to argue about amoung basketball fans, there can be some factual basis rather than pure bias. Here are some
         interesting all time statistics leaders expressed through tables.</p>
+
+        <a name="StadiumList"></a>
 
         <h1 style="color: #3ba390; text-shadow: 2px 2px black;">Top 10 Largest NBA Stadiums by maximum capacity</h1>
         <ol class="text-warning" style="font-size:25px;">
@@ -280,8 +299,6 @@
             </tr>
         </table>
 
-        <p>For more information, here is the NBA website on the current statistic leaders and other interesting statistics:</p>
-        <iframe src="http://stats.nba.com" height="400" width="100%" title="Everything to do with NBA statistics"></iframe>
 
     </div>
 </body>
